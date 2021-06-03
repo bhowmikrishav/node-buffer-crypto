@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "outDir": "./lib",
+    "target": "ESNext",
+    "module": "commonjs",
+    "declaration": true,
+    "esModuleInterop": true,
+    "incremental": true,
+    "skipLibCheck": true,
+
+    "strict": true,
+    "noImplicitAny": false,
+    "noImplicitThis": false,
+    "strictPropertyInitialization": false,
+    "noImplicitReturns": true,
+    "importsNotUsedAsValues": "error",
+    "resolveJsonModule": true
+  },
+  "include": [
+    "./src/"
+  ]
+}

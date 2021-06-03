@@ -1,0 +1,37 @@
+{
+  "name": "node-buffer-crypto",
+  "version": "0.0.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "type": "commonjs",
+  "types": "./lib/index.d.ts",
+  "directories": {
+    "lib": "lib",
+    "example": "examples",
+    "test": "tests",
+    "doc": "docs"
+  },
+  "scripts": {
+    "startDev": "tsc -w",
+    "compile": "tsc",
+    "test": "node ./node_modules/mocha/bin/mocha ./tests/index.ts --require ts-node/register --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jovial-opensources/tabular-json-node.git"
+  },
+  "keywords": [
+    "crypto",
+    "encryption",
+    "encryptLongBuffers"
+  ],
+  "author": "Rishav Bhowmik",
+  "license": "MPL-2.0",
+  "devDependencies": {
+    "@types/mocha": "^8.2.2",
+    "@types/node": "^15.6.1",
+    "mocha": "^8.4.0",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.2"
+  }
+}
