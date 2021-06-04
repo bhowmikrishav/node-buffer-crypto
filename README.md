@@ -58,7 +58,7 @@ openssl rsa -in enc.key -out enc.pub -pubout -outform PEM
 ```js
 const { publicEncrypt, privateDecrypt } = require("crypto")
 const { readFileSync } = require("fs")
-const { strictEqual }
+const { strictEqual } = require("assert")
 
 const publicKey = readFileSync("./enc.pub")
 const privateKey = readFileSync("./enc.pub")
