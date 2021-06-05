@@ -1,3 +1,4 @@
+/// <reference types="node" />
 import { encryptBigBuffer, decryptBigBuffer } from "./cryptBigBuffer";
 /**
  * ### V8 serialiser (Recommended)
@@ -6,7 +7,7 @@ import { encryptBigBuffer, decryptBigBuffer } from "./cryptBigBuffer";
  * - Space efficient
  */
 declare const v8: {
-    encryptBigBuffer: import("./cryptBigBuffer.types").EncryptBigBuffer;
-    decryptBigBuffer: import("./cryptBigBuffer.types").DecryptBigBuffer;
+    encryptBigBuffer: (publicKey: string, modLength: number, data: Buffer) => Buffer;
+    decryptBigBuffer: (privateKey: string, data: Buffer) => Buffer;
 };
 export { v8, encryptBigBuffer, decryptBigBuffer };
