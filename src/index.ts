@@ -1,6 +1,11 @@
-import { v8 } from "./BufferEncryptorV8"
+import {
+    v8,
+    encryptBigBuffer,
+    decryptBigBuffer
+} from "./BufferEncryptorV8"
 
 export {
     v8,
-    ...v8
+    encryptBigBuffer,
+    decryptBigBuffer
 }
